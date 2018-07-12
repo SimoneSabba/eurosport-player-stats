@@ -1,14 +1,10 @@
-:root {
-    --header-bg-color: #081c24;
-  }
-
 .header {
-    background-color: var(--header-bg-color);
+    background-color: var(--main-bg-color);
     color: white;
     height: 50px;
     display: flex;
-    align-items: center;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 1.5rem;
+    align-items: center;
 }
