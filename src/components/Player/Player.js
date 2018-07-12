@@ -1,7 +1,10 @@
 import React from 'react';
+import classes from './Player.css';
 
 const player = (props) => (
-    <div>{props.player.firstname}</div>
+    <div className={classes.player}>
+        {props.player.firstname}
+    </div>
 );
 
 export default player;
