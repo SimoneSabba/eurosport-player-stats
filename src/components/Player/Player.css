@@ -1,6 +1,22 @@
 .player {
-    border: 1px solid red;
-    width: 300px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 10px;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out, box-shadow .4s;
+}
+
+.player:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 15px 2px var(--main-bg-color);
+}
+
+.player__ranking {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
 
 .player__picture {
@@ -9,6 +25,24 @@
     justify-content: center;
 }
 
-.player__info {
-    
+.player__name {
+    background: var(--main-bg-color);
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px
+}
+
+.player__wrapper {
+    color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.player__wrapper img {
+    width: 50px;
+    height: 100%;
 }

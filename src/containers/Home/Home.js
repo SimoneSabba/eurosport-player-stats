@@ -26,7 +26,14 @@ class Home extends Component {
 
         if (!this.state.error) {
             players = this.state.players.map(player => {
-                return <Player player={player} key={player.shortname} />;
+                return <Player
+                            key={player.shortname}
+                            firstname={player.firstname}
+                            lastname={player.lastname}
+                            picture={player.picture}
+                            country={player.country}
+                            data={player.data}
+                        />;
             });
         }
 
