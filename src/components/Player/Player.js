@@ -12,7 +12,7 @@ import Points from './Points/Points';
 const player = (props) => (
     <div className={classes.player}>
         <Ranking position={props.data.rank} />
-        <Avatar picture={props.picture} altText={props.firstname} />
+        <Avatar picture={props.picture} />
         <Name firstname={props.firstname} lastname={props.lastname} />
         <Nationality flag={props.country.picture} countryCode={props.country.code} />
         <Info label="Age" value={props.data.age} />
