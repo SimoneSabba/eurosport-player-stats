@@ -43,6 +43,5 @@ Here some improvement suggested ( not implemented for time restriction )
 
 - Cache http request
 - Implement Redux to store the API data, in order to optimise and minimize the request
-- Loading state for API request
 - More comprehensive unit test
 

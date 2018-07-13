@@ -9,14 +9,15 @@ class Home extends Component {
 
     state = {
         error: false,
-        players: []
+        players: [],
+        isLoading: false
     };
 
     componentDidMount() {
+        this.setState({ isLoading: true });
         api.getPlayers()
             .then(response => {
-                console.log(response.data);
-                this.setState({ players: response.data.players });
+                this.setState({ players: response.data.players, isLoading: false });
             })
             .catch(error => this.setState({ error: true }));
     }
@@ -38,6 +39,9 @@ class Home extends Component {
         }
 
         return (
+            this.state.isLoading 
+            ? <h1> Loading... </h1>
+            :
             <Fragment>
                 <List>
                     {players}
