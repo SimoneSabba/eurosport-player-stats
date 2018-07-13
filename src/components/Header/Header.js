@@ -5,7 +5,7 @@ import logo from '../../Eurosport_logo.svg';
 const header = () => (
     <header className={classes.header}>
         <img src={logo} alt="logo" />
-        Eurosport Player Stats
+        <span>Eurosport Player Stats</span>
     </header>
 );
 

@@ -13,36 +13,10 @@
     box-shadow: 0 0 15px 2px var(--main-bg-color);
 }
 
-.player__ranking {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px;
-}
+@media (max-width: 768px) {
 
-.player__picture {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .player {
+        margin-bottom: 30px;
+    }
 
-.player__name {
-    background: var(--main-bg-color);
-    color: white;
-    margin-top: 20px;
-    text-align: center;
-    padding: 10px
-}
-
-.player__wrapper {
-    color: var(--main-bg-color);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.player__wrapper img {
-    width: 50px;
-    height: 100%;
-}
+  }
